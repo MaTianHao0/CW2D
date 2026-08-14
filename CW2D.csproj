@@ -1,0 +1,165 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup>
+    <!-- Select the framework(s) you wish to target.
+        Rhino 6: net45
+        Rhino 7: net48
+        Rhino 8 Windows: net48, net7.0, net7.0-windows, net7.0-windows10.0.22000.0, etc
+        Rhino 8 Mac: net7.0, net7.0-macos, net7.0-macos12.0, etc
+    -->
+    <TargetFrameworks>net7.0-windows;net7.0;net48</TargetFrameworks>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <TargetExt>.gha</TargetExt>
+    <NoWarn>NU1701;NETSDK1086</NoWarn>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <!-- Specifies information for Assembly and Yak -->
+    <Version>1.0</Version>
+    <Title>CW2D</Title>
+    <Company>CW2D Authors</Company>
+    <Description>Description of CW2D</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Attributes.cs" />
+    <Compile Remove="Attributes\TieGeoWithAttr2.cs" />
+    <Compile Remove="floor_plan_gen_plugin %281%29.cs" />
+    <Compile Remove="MakePlane\DrawPlaneFromModel.cs" />
+    <Compile Remove="SetAttributes.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="Resources\attri modify.png" />
+    <None Remove="Resources\Binding Properties.png" />
+    <None Remove="Resources\BoLi.png" />
+    <None Remove="Resources\Detail Annotation.png" />
+    <None Remove="Resources\Detail Drawing.png" />
+    <None Remove="Resources\detail-front.png" />
+    <None Remove="Resources\detail-left.png" />
+    <None Remove="Resources\detail-right.png" />
+    <None Remove="Resources\DrawingFrame.png" />
+    <None Remove="Resources\DWG.png" />
+    <None Remove="Resources\e-door.png" />
+    <None Remove="Resources\Elevation Annotation.png" />
+    <None Remove="Resources\Elevation Drawing.png" />
+    <None Remove="Resources\FRAME.png" />
+    <None Remove="Resources\GangLongGu.png" />
+    <None Remove="Resources\GetGeoFromLayer.png" />
+    <None Remove="Resources\JinShuBan.png" />
+    <None Remove="Resources\lay info.png" />
+    <None Remove="Resources\layout.png" />
+    <None Remove="Resources\LegendGenerator.png" />
+    <None Remove="Resources\LvLongGu.png" />
+    <None Remove="Resources\makecenter.png" />
+    <None Remove="Resources\MakePlane.png" />
+    <None Remove="Resources\MarkAxisDistance .png" />
+    <None Remove="Resources\MarkLineLength.png" />
+    <None Remove="Resources\Material Properties.png" />
+    <None Remove="Resources\MuLongGu.png" />
+    <None Remove="Resources\Node -left.png" />
+    <None Remove="Resources\Node Annotation.png" />
+    <None Remove="Resources\Node Drawing.png" />
+    <None Remove="Resources\Node-frame.png" />
+    <None Remove="Resources\Node-front.png" />
+    <None Remove="Resources\p-door.png" />
+    <None Remove="Resources\Plane Annotation.png" />
+    <None Remove="Resources\Plane Drawing.png" />
+    <None Remove="Resources\PlaneFromBrep.png" />
+    <None Remove="Resources\read node.png" />
+    <None Remove="Resources\Section Annotation.png" />
+    <None Remove="Resources\Section Drawing.png" />
+    <None Remove="Resources\ShiCai.png" />
+    <None Remove="Resources\ShiGaoBan.png" />
+    <None Remove="Resources\ZiDingYi.png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\attri modify.png" />
+    <EmbeddedResource Include="Resources\BoLi.png" />
+    <EmbeddedResource Include="Resources\detail-front.png" />
+    <EmbeddedResource Include="Resources\detail-left.png" />
+    <EmbeddedResource Include="Resources\detail-right.png" />
+    <EmbeddedResource Include="Resources\DrawingFrame.png" />
+    <EmbeddedResource Include="Resources\e-door.png" />
+    <EmbeddedResource Include="Resources\FRAME.png" />
+    <EmbeddedResource Include="Resources\GangLongGu.png" />
+    <EmbeddedResource Include="Resources\GetGeoFromLayer.png" />
+    <EmbeddedResource Include="Resources\JinShuBan.png" />
+    <EmbeddedResource Include="Resources\lay info.png" />
+    <EmbeddedResource Include="Resources\layout.png" />
+    <EmbeddedResource Include="Resources\LegendGenerator.png" />
+    <EmbeddedResource Include="Resources\LvLongGu.png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+    </COMReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Binding Properties.png" />
+    <EmbeddedResource Include="Resources\Detail Annotation.png" />
+    <EmbeddedResource Include="Resources\Detail Drawing.png" />
+    <EmbeddedResource Include="Resources\Elevation Annotation.png" />
+    <EmbeddedResource Include="Resources\Elevation Drawing.png" />
+    <EmbeddedResource Include="Resources\makecenter.png" />
+    <EmbeddedResource Include="Resources\MakePlane.png" />
+    <EmbeddedResource Include="Resources\MarkAxisDistance .png" />
+    <EmbeddedResource Include="Resources\MarkLineLength.png" />
+    <EmbeddedResource Include="Resources\Material Properties.png" />
+    <EmbeddedResource Include="Resources\MuLongGu.png" />
+    <EmbeddedResource Include="Resources\Node -left.png" />
+    <EmbeddedResource Include="Resources\Node Annotation.png" />
+    <EmbeddedResource Include="Resources\Node-frame.png" />
+    <EmbeddedResource Include="Resources\Node-front.png" />
+    <EmbeddedResource Include="Resources\p-door.png" />
+    <EmbeddedResource Include="Resources\Plane Annotation.png" />
+    <EmbeddedResource Include="Resources\Plane Drawing.png" />
+    <EmbeddedResource Include="Resources\read node.png" />
+    <EmbeddedResource Include="Resources\Section Annotation.png" />
+    <EmbeddedResource Include="Resources\Section Drawing.png" />
+    <EmbeddedResource Include="Resources\ShiCai.png" />
+    <EmbeddedResource Include="Resources\ShiGaoBan.png" />
+    <EmbeddedResource Include="Resources\ZiDingYi.png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Grasshopper" Version="8.5.24072.13001" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="9.0.5" />
+    <PackageReference Include="RhinoCommon" Version="8.5.24072.13001" />
+    <PackageReference Include="System.Text.Json" Version="9.0.9" />
+  </ItemGroup>
+  
+  <!-- For Windows only builds -->
+  <PropertyGroup Condition="$(TargetFramework.Contains('-windows')) or $(TargetFramework.StartsWith('net4'))">
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <!-- Reference WinForms for .NET 7.0 on macOS -->
+  <ItemGroup Condition="!($(TargetFramework.Contains('-windows')) or $(TargetFramework.StartsWith('net4')))">
+    <!-- Rhino 8.11 and later you can use this -->
+    <!-- <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" /> -->
+    
+    <!-- Rhino 8.10 and earlier -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" ExcludeAssets="all" GeneratePathProperty="true" />
+    <Reference Include="$(PkgMicrosoft_NETFramework_ReferenceAssemblies_net48)\build\.NETFramework\v4.8\System.Windows.Forms.dll" Private="False" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="File\FrameFile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Node Drawing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DWG.png" />
+  </ItemGroup>
+
+</Project>

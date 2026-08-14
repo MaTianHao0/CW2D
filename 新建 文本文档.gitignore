@@ -1,0 +1,32 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Build
+build/
+dist/
+
+# Logs and temporary files
+*.log
+*.tmp
+~$*
+
+# Secrets and local configuration
+.env
+.env.*
+appsettings.Local.json
+
+# System files
+.DS_Store
+Thumbs.db
